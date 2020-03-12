@@ -5,18 +5,40 @@ const {CleanWebpackPlugin} = require('clean-webpack-plugin');
 
 module.exports = {
     mode: 'development',
-    entry: './src/index.js',
-    output: {
-        filename: 'bundle.js',
-        path: path.resolve(__dirname, 'dist'),
+    entry: './src/index.html',
+    module: {
+        rules: [
+            {
+                test: /\.(png|svg|jpg|gif)$/,
+                use: [
+                    'file-loader',
+                ],
+            },
+            {
+                test: /\.html$/i,
+                use: [
+                    {
+                        loader: "file-loader",
+                        options: {
+                            name: '[name].[ext]',
+                        },
+                    },
+                    "extract-loader",
+                    {
+                        loader: "html-loader",
+                        options: {
+                            attrs: ["img:src", "link:href"]
+                        }
+                    }
+                ]
+            },
+        ],
     },
     plugins: [
         new CleanWebpackPlugin(),
-        new HtmlWebpackPlugin({
-            template: './src/index.html',
-        }),
     ],
     devServer: {
         contentBase: './dist',
+        index: 'index.html'
     },
 };
