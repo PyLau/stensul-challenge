@@ -3,9 +3,9 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
         <title>Stensul Email Design</title>
-        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;">
+        <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=no;"/>
         <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet"/>
         <style type="text/css">
             table {border-collapse:separate;}
             a {text-decoration: none; color: #00788a;}
@@ -13,17 +13,47 @@
             h2,h2 a,h3,h3 a,h4,h5,h6,.t_cht {color:#000}
             .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td {line-height: 100%;}
             .ExternalClass {width: 100%;}
-            /*removed important*/
-            /*check line height*/
-            /*check width*/
-            /*removed all link & visited*/
+            @media only screen and (max-width: 480px){
+                #templateColumns1, #AdColumns, #FirstSeparatorLine, #ThreeColumn, #InfoTable, #SecondSeparatorLine, #Footer{
+                    width:100% !important;
+                }
+
+                .templateColumnContainer {
+                    display:block !important;
+                    width:100% !important;
+                }
+
+                .columnImage, .columnImage1 {
+                    height:auto !important;
+                    max-width:480px !important;
+                    width:100% !important;
+                }
+
+                .leftColumnContent{
+                    font-size:16px !important;
+                    line-height:125% !important;
+                }
+
+                .rightColumnContent{
+                    font-size:16px !important;
+                    line-height:125% !important;
+                }
+
+                .pad0 {
+                    padding: 0 !important;
+                }
+
+                .addborder {
+                    border: 1px solid #dddddd;
+                }
+            }
         </style>
     </head>
-    <body style="margin: 0; padding: 0; font-family: 'Open Sans', sans-serif;">
+    <body style="margin: 0; padding: 0; font-family: 'Open Sans', Arial, sans-serif;">
         <table cellpadding="0" cellspacing="0" border="0" role="presentation" width="100%">
             <tr>
                 <td style="padding: 0;">
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse;" role="presentation">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" id="templateColumns1" style="border-collapse: collapse;" role="presentation">
                         <tr>
                             <td bgcolor="#ff3300" style="height: 4px;">
                             </td>
@@ -37,7 +67,7 @@
                         </tr>
                         <tr>
                             <td>
-                                <img src="https://raw.githubusercontent.com/PyLau/stensul-challenge/master/src/heroimage.png" border="0" width="100%" height="288px" alt="Hero Image">
+                                <img src="https://raw.githubusercontent.com/PyLau/stensul-challenge/master/src/heroimage.png" border="0" width="100%" height="288px" alt="Hero Image"/>
                             </td>
                         </tr>
                         <tr>
@@ -51,7 +81,7 @@
                             </td>
                         </tr>
                         <tr>
-                            <td style="padding-left: 30px; padding-right: 30px; padding-bottom: 20px; font-size: 15px; font-weight: 300; color: #666666">
+                            <td style="padding-left: 30px; padding-right: 30px; padding-bottom: 20px; font-size: 15px; font-weight: 300; color: #666666; line-height: 1.75;">
                                 Their new line, The Spear (Russian Grade VI, A3 M8, 1000m), marks the fifth...
                             </td>
                         </tr>
@@ -61,7 +91,7 @@
                                     <span style="color: #ffffff; vertical-align: super; margin-right: 5px;">
                                       Read More
                                     </span>
-                                    <img src="https://raw.githubusercontent.com/PyLau/stensul-challenge/master/src/arrow.png" height="20" width="20" alt="Arrow">
+                                    <img src="https://raw.githubusercontent.com/PyLau/stensul-challenge/master/src/arrow.png" height="20" width="20" alt="Arrow"/>
                                 </a>
                             </td>
                         </tr>
@@ -71,229 +101,225 @@
                         <tr>
                             <td height="45" width="100%" bgcolor="#fff"></td>
                         </tr>
-                        <!-- ------ CONTENT + AD ------ -->
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table border="0" cellpadding="0" cellspacing="0" width="600" align="center" id="AdColumns">
                         <tr>
-                            <td>
-                                <table border="0" cellpadding="0" cellspacing="0" width="100%" role="presentation" style="margin-bottom: 40px;">
-                                    <tr>
-                                        <td width="303" valign="top">
-                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                                <tr>
-                                                    <td>
-                                                        <img src="https://raw.githubusercontent.com/PyLau/stensul-challenge/master/src/pic3.png" alt="Mountain" width="100%" height="185" style="display: block;" />
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td style="padding-top: 20px; padding-left: 30px;">
-                                                        <h3 style="margin:0; mso-line-height-rule:exactly; font-weight: 300; font-size: 24px; color: #000000">Photo of the week</h3>
-                                                        <h4 style="margin:0; mso-line-height-rule:exactly; font-weight: 300; font-size: 15px; line-height: 3; color: #666666">An Everest side view makes the top</h4>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                        <td width="299" valign="top">
-                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                                <tr>
-                                                    <td>
-                                                        <img src="https://raw.githubusercontent.com/PyLau/stensul-challenge/master/src/pic7.png" alt="" width="100%" height="185" style="display: block;" />
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td style="padding-top: 20px; padding-right: 30px;">
-                                                        <h4 style="margin:0; mso-line-height-rule:exactly; font-weight: 300; font-size: 12px; text-align: right; color: #514960">ADVERTISEMENT</h4>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                        <!-- END CONTENT + AD -->
-                        <!-- ------ SEPARATOR LINE ------ -->
-                        <tr>
-                            <td>
-                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse;" role="presentation">
-                                    <tr>
-                                        <td style="padding-left: 30px; padding-right: 30px; padding-bottom: 40px;">
-                                            <hr style="color: #dddddd;" size="1">
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                        <!-- ------ END SEPARATOR LINE ------ -->
-                        <!-- ------ 3 COLUMN BLOCK WITH TEXT ------ -->
-                        <tr>
-                            <td>
-                                <table border="0" cellpadding="0" cellspacing="0" width="600">
-                                    <tr>
-                                        <td align="center" valign="top" width="201">
-                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                                <tr>
-                                                    <td>
-                                                        <img src="https://raw.githubusercontent.com/PyLau/stensul-challenge/master/src/pic6.png" alt="Mountain" width="100%" height="137">
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td style="padding-top: 20px; padding-left: 30px; padding-right: 30px; padding-bottom: 25px;">
-                                                        <h3 style="margin:0; mso-line-height-rule:exactly; font-weight: 300; font-size: 24px; color: #222222;">New Routes</h3>
-                                                        <h4 style="margin:0; mso-line-height-rule:exactly; font-weight: 300; font-size: 15px; padding-top: 10px; color: #666666">This summer left tons of novelties in the Karakorum</h4>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                        <td align="center" valign="top" width="200">
-                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                                <tr>
-                                                    <td>
-                                                        <img src="https://raw.githubusercontent.com/PyLau/stensul-challenge/master/src/pic5.png" alt="Mountain" height="137" />
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td style="padding-top: 20px; padding-left: 30px; padding-right: 30px; padding-bottom: 25px;">
-                                                        <h3 style="margin:0; mso-line-height-rule:exactly; font-weight: 300; font-size: 24px; color: #222222;">SCE TV</h3>
-                                                        <h4 style="margin:0; mso-line-height-rule:exactly; font-weight: 300; font-size: 15px; padding-top: 10px; color: #666666">Follow the minute by minute podcast with Joe Jenkins</h4>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                        <td align="center" valign="top" width="199">
-                                            <table border="0" cellpadding="0" cellspacing="0" width="100%">
-                                                <tr>
-                                                    <td>
-                                                        <img src="https://raw.githubusercontent.com/PyLau/stensul-challenge/master/src/pic4.png" alt="Mountain" height="137" />
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td style="padding-top: 20px; padding-left: 28px; padding-right: 30px; padding-bottom: 25px;">
-                                                        <h3 style="margin:0; mso-line-height-rule:exactly; font-weight: 300; font-size: 24px; color: #222222">Winter Camp</h3>
-                                                        <h4 style="margin:0; mso-line-height-rule:exactly; font-weight: 300; font-size: 15px; padding-top: 10px; color: #666666">RSVP today and enjoy a one in a lifetime experience</h4>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                        <!-- END 3 COLUMN BLOCK WITH TEXT -->
-                        <tr>
-                            <td>
-                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse; margin-bottom: 42px;" role="presentation">
-                                    <tr>
-                                        <td align="center" valign="top" width="50%" style="padding-left: 30px;">
-                                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border: 1px solid #dddddd; border-right: none;font-weight: 300; font-size: 15px;">
-                                                <tr height="68" bgcolor="#efefef" style="color: #514960;">
-                                                    <td style="padding-left: 15px;">
-                                                        Event
-                                                    </td>
-                                                </tr>
-                                                <tr height="68">
-                                                    <td style="color: #666666;padding-left: 15px;">
-                                                        Base Camp Party
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                        <td align="center" valign="top" width="50%" style="padding-right: 30px;">
-                                            <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border: 1px solid #dddddd;font-weight: 300; font-size: 15px;">
-                                                <tr height="68" bgcolor="#efefef" style="color: #514960;">
-                                                    <td style="padding-left: 15px;">
-                                                        Date
-                                                    </td>
-                                                </tr>
-                                                <tr height="68" style="color: #666666;padding-left: 15px;">
-                                                    <td style="padding-left: 15px;">
-                                                        22/12/2016
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td align="center" width="170" height="56" bgcolor="#f94516" style="color: #ffffff; display: block; margin: 0 auto 35px;">
-                                <a href="#" style="font-size:24px; font-weight: 300; text-decoration: none; line-height:56px; width:100%; display:inline-block">
-                                    <span style="color: #ffffff; vertical-align: middle; margin-right: 5px;">
-                                      More Info
-                                    </span>
-                                </a>
-                            </td>
-                        </tr>
-                        <td style="margin-bottom: 40px;">
-                            <table align="center" border="0" cellpadding="0" cellspacing="0" width="170" style="border-collapse: collapse; margin-bottom: 35px;" role="presentation">
-                                <tr>
-                                    <td>
-                                        <a href="https://www.facebook.com" target="_blank" style="text-decoration: none">
-                                            <img src="https://raw.githubusercontent.com/PyLau/stensul-challenge/master/src/facebook.png" width="36" height="36" alt="Facebook">
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="https://www.twitter.com" target="_blank" style="text-decoration: none">
-                                            <img src="https://raw.githubusercontent.com/PyLau/stensul-challenge/master/src/twitter.png" width="36" height="36" alt="Twitter">
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="https://www.instagram.com" target="_blank" style="text-decoration: none">
-                                            <img src="https://raw.githubusercontent.com/PyLau/stensul-challenge/master/src/instagram.png" width="36" height="36" alt="Instagram">
-                                        </a>
-                                    </td>
-                                    <td>
-                                        <a href="https://www.google.com" target="_blank" style="text-decoration: none">
-                                            <img src="https://raw.githubusercontent.com/PyLau/stensul-challenge/master/src/google.png" width="36" height="36" alt="Google Plus">
-                                        </a>
-                                    </td>
-                                </tr>
-                            </table>
-                        </td>
-                        <!-- ------ SEPARATOR LINE ------ -->
-                        <tr>
-                            <td style="padding-left: 30px; padding-right: 30px;">
-                                <hr style="color: #dddddd;" size="1">
-                            </td>
-                        </tr>
-                        <!-- ------ END SEPARATOR LINE ------ -->
-                        <tr>
-                            <td>
-                                <!--FOOTER-->
-                                <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse; margin-bottom: 44px" role="presentation">
-                                    <tr>
-                                        <td style="padding-top: 20px;">
-                                            <h1 style="margin:0; mso-line-height-rule:exactly; font-weight: 300; font-size: 20px; color: #222222; text-align: center;">
-                                                South Col Experience
-                                            </h1>
-                                        </td>
-                                    </tr>
+                            <td align="center" valign="top" width="303" class="templateColumnContainer">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                     <tr>
                                         <td>
-                                            <h2 style="margin:0; mso-line-height-rule:exactly; font-weight: 300; font-size: 12px; color: #666666; text-align: center; line-height: 2;">
-                                                South Col Experience 2016. All Rights Reserved
-                                            </h2>
+                                            <img src="https://raw.githubusercontent.com/PyLau/stensul-challenge/master/src/pic3.png" alt="Mountain" width="100%" height="185" style="display: block;" />
                                         </td>
                                     </tr>
                                     <tr>
-                                        <td style="text-align: center">
-                                            <a href="#" style="font-size:15px; font-weight: 300; text-decoration: underline; color: #666666;">
-                                                Contact
-                                            </a>
-                                            |
-                                            <a href="#" style="font-size:15px; font-weight: 300; text-decoration: underline; color: #666666;">
-                                                Privacy Policy
-                                            </a>
-                                            |
-                                            <a href="#" style="font-size:15px; font-weight: 300; text-decoration: underline; color: #666666;">
-                                                Terms of Service
-                                            </a>
+                                        <td style="padding-top: 20px; padding-left: 30px;">
+                                            <h3 style="margin:0; mso-line-height-rule:exactly; font-weight: 300; font-size: 24px; color: #000000">Photo of the week</h3>
+                                            <h4 style="margin:0; mso-line-height-rule:exactly; font-weight: 300; font-size: 15px; line-height: 3; color: #666666">An Everest side view makes the top</h4>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td align="center" valign="top" width="299" class="templateColumnContainer">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tr>
+                                        <td>
+                                            <img src="https://raw.githubusercontent.com/PyLau/stensul-challenge/master/src/pic7.png" alt="" width="100%" height="185" style="display: block;" />
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-top: 20px; padding-right: 30px;">
+                                            <h4 style="margin:0; mso-line-height-rule:exactly; font-weight: 300; font-size: 12px; text-align: right; color: #514960">ADVERTISEMENT</h4>
                                         </td>
                                     </tr>
                                 </table>
                             </td>
                         </tr>
                     </table>
-                    <!-- END FULL TABLE -->
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse;" id="FirstSeparatorLine" role="presentation">
+                        <tr>
+                            <td style="padding-left: 30px; padding-right: 30px; padding-bottom: 40px; padding-top: 30px;">
+                                <hr style="color: #dddddd;" size="1"/>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse;" width="600" id="ThreeColumn" role="presentation">
+                        <tr>
+                            <td align="center" valign="top" width="201" class="templateColumnContainer">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tr>
+                                        <td>
+                                            <img src="https://raw.githubusercontent.com/PyLau/stensul-challenge/master/src/pic6.png" alt="Mountain" width="100%" height="137"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-top: 20px; padding-left: 30px; padding-right: 30px; padding-bottom: 25px;">
+                                            <h3 style="margin:0; mso-line-height-rule:exactly; font-weight: 300; font-size: 24px; color: #222222;">New Routes</h3>
+                                            <h4 style="margin:0; mso-line-height-rule:exactly; font-weight: 300; font-size: 15px; padding-top: 10px; color: #666666">This summer left tons of novelties in the Karakorum</h4>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td align="center" valign="top" width="200" class="templateColumnContainer">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tr>
+                                        <td>
+                                            <img src="https://raw.githubusercontent.com/PyLau/stensul-challenge/master/src/pic5.png" alt="Mountain" height="137" width="100%"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-top: 20px; padding-left: 30px; padding-right: 30px; padding-bottom: 25px;">
+                                            <h3 style="margin:0; mso-line-height-rule:exactly; font-weight: 300; font-size: 24px; color: #222222;">SCE TV</h3>
+                                            <h4 style="margin:0; mso-line-height-rule:exactly; font-weight: 300; font-size: 15px; padding-top: 10px; color: #666666">Follow the minute by minute podcast with Joe Jenkins</h4>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td align="center" valign="top" width="199" class="templateColumnContainer">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%">
+                                    <tr>
+                                        <td>
+                                            <img src="https://raw.githubusercontent.com/PyLau/stensul-challenge/master/src/pic4.png" alt="Mountain" height="137" width="100%"/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-top: 20px; padding-left: 28px; padding-right: 30px; padding-bottom: 25px;">
+                                            <h3 style="margin:0; mso-line-height-rule:exactly; font-weight: 300; font-size: 24px; color: #222222">Winter Camp</h3>
+                                            <h4 style="margin:0; mso-line-height-rule:exactly; font-weight: 300; font-size: 15px; padding-top: 10px; color: #666666">RSVP today and enjoy a one in a lifetime experience</h4>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" id="InfoTable" style="border-collapse: collapse; margin-bottom: 42px;" role="presentation">
+                        <tr>
+                            <td align="center" valign="top" width="50%" style="padding-left: 30px;" class="templateColumnContainer pad0">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border: 1px solid #dddddd; border-right: none;font-weight: 300; font-size: 15px;" class="addborder">
+                                    <tr height="68" bgcolor="#efefef" style="color: #514960;">
+                                        <td style="padding-left: 15px;">
+                                            Event
+                                        </td>
+                                    </tr>
+                                    <tr height="68">
+                                        <td style="color: #666666;padding-left: 15px;">
+                                            Base Camp Party
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                            <td align="center" valign="top" width="50%" style="padding-right: 30px;" class="templateColumnContainer pad0">
+                                <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border: 1px solid #dddddd;font-weight: 300; font-size: 15px;">
+                                    <tr height="68" bgcolor="#efefef" style="color: #514960;">
+                                        <td style="padding-left: 15px;">
+                                            Date
+                                        </td>
+                                    </tr>
+                                    <tr height="68" style="color: #666666;padding-left: 15px;">
+                                        <td style="padding-left: 15px;">
+                                            22/12/2016
+                                        </td>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td align="center" width="170" height="56" bgcolor="#f94516" style="color: #ffffff; display: block; margin: 0 auto 35px;">
+                    <a href="#" style="font-size:24px; font-weight: 300; text-decoration: none; line-height:56px; width:100%; display:inline-block">
+                        <span style="color: #ffffff; vertical-align: middle; margin-right: 5px;">
+                            More Info
+                        </span>
+                    </a>
+                </td>
+            </tr>
+            <td style="margin-bottom: 40px;">
+                <table align="center" border="0" cellpadding="0" cellspacing="0" width="170" style="border-collapse: collapse; margin-bottom: 35px;" role="presentation">
+                    <tr>
+                        <td>
+                            <a href="https://www.facebook.com" target="_blank" style="text-decoration: none">
+                                <img src="https://raw.githubusercontent.com/PyLau/stensul-challenge/master/src/facebook.png" width="36" height="36" alt="Facebook" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://www.twitter.com" target="_blank" style="text-decoration: none">
+                                <img src="https://raw.githubusercontent.com/PyLau/stensul-challenge/master/src/twitter.png" width="36" height="36" alt="Twitter" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://www.instagram.com" target="_blank" style="text-decoration: none">
+                                <img src="https://raw.githubusercontent.com/PyLau/stensul-challenge/master/src/instagram.png" width="36" height="36" alt="Instagram" />
+                            </a>
+                        </td>
+                        <td>
+                            <a href="https://www.google.com" target="_blank" style="text-decoration: none">
+                                <img src="https://raw.githubusercontent.com/PyLau/stensul-challenge/master/src/google.png" width="36" height="36" alt="Google Plus" />
+                            </a>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <tr>
+                <td>
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse;" id="SecondSeparatorLine" role="presentation">
+                        <tr>
+                            <td style="padding-left: 30px; padding-right: 30px; padding-bottom: 40px; padding-top: 30px;">
+                                <hr style="color: #dddddd;" size="1"/>
+                            </td>
+                        </tr>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="border-collapse: collapse; margin-bottom: 44px" role="presentation" id="Footer">
+                        <tr>
+                            <td style="padding-top: 20px;">
+                                <h1 style="margin:0; mso-line-height-rule:exactly; font-weight: 300; font-size: 20px; color: #222222; text-align: center;">
+                                    South Col Experience
+                                </h1>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <h2 style="margin:0; mso-line-height-rule:exactly; font-weight: 300; font-size: 12px; color: #666666; text-align: center; line-height: 2;">
+                                    South Col Experience 2016. All Rights Reserved
+                                </h2>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="text-align: center">
+                                <a href="#" style="font-size:15px; font-weight: 300; text-decoration: underline; color: #666666;">
+                                    Contact
+                                </a>
+                                |
+                                <a href="#" style="font-size:15px; font-weight: 300; text-decoration: underline; color: #666666;">
+                                    Privacy Policy
+                                </a>
+                                |
+                                <a href="#" style="font-size:15px; font-weight: 300; text-decoration: underline; color: #666666;">
+                                    Terms of Service
+                                </a>
+                            </td>
+                        </tr>
+                    </table>
                 </td>
             </tr>
         </table>
