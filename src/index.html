@@ -7,10 +7,37 @@
         <meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE" />
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400" rel="stylesheet"/>
         <style type="text/css">
-            table {border-collapse:separate;}
-            a {text-decoration: none; color: #00788a;}
-            a:hover {text-decoration: underline;}
-            h2,h2 a,h3,h3 a,h4,h5,h6,.t_cht {color:#000}
+            /*Reset styles*/
+            /* Remove space around the email design. */
+            html,
+            body {
+                margin: 0 auto !important;
+                padding: 0 !important;
+                height: 100% !important;
+                width: 100% !important;
+            }
+
+            /* Stop Outlook resizing small text. */
+            * {
+                -ms-text-size-adjust: 100%;
+            }
+
+            /* Stop Outlook from adding extra spacing to tables. */
+            table,
+            td {
+                mso-table-lspace: 0pt !important;
+                mso-table-rspace: 0pt !important;
+            }
+
+            /* Use a better rendering method when resizing images in Outlook IE. */
+            img {
+                -ms-interpolation-mode:bicubic;
+            }
+
+            /* Prevent Windows 10 Mail from underlining links. Styles for underlined links should be inline. */
+            a {
+                text-decoration: none;
+            }
             .ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td {line-height: 100%;}
             .ExternalClass {width: 100%;}
             @media only screen and (max-width: 480px){
@@ -48,10 +75,10 @@
             </style>
         <![endif]-->
     </head>
-    <body style="margin: 0; padding: 0; font-family: 'Open Sans', Arial, sans-serif;">
+    <body style="margin: 0; padding: 0; font-family: 'Open Sans', Arial, sans-serif; mso-line-height-rule: exactly;">
         <table cellpadding="0" cellspacing="0" border="0" role="presentation" width="100%">
             <tr>
-                <td style="padding: 0;">
+                <td>
                     <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" id="heroBlock" style="border-collapse: collapse; border-bottom: 21px solid #333333" role="presentation">
                         <tr>
                             <td bgcolor="#333333" style="height: 75px; color: #ffffff; text-align: center; border-top: 4px solid #ff3300">
@@ -76,27 +103,27 @@
                             </td>
                         </tr>
                         <tr>
-                            <td style="padding-left: 30px; padding-right: 30px; padding-bottom: 20px; font-size: 15px; font-weight: 300; color: #666666; line-height: 1.75;">
+                            <td style="padding-left: 30px; padding-right: 30px; padding-bottom: 40px; font-size: 15px; font-weight: 300; color: #666666; line-height: 1.75;">
                                 Their new line, The Spear (Russian Grade VI, A3 M8, 1000m), marks the fifth...
                             </td>
                         </tr>
-                        <tr>
-                            <td>
-                                <table cellspacing="0" cellpadding="0" style="margin-left:30px; margin-bottom: 47px">
-                                    <tr>
-                                        <td bgcolor="#f94516">
-                                            <a href="https://stensul.com/" target="_blank" title="Read More" style="padding: 10px 15px; text-decoration: none;font-weight:300;display: inline-block;">
-                                                <span style="color: #ffffff; margin-right: 5px; font-size: 15px;">
-                                                    Read More
-                                                </span>
-                                                <img src="https://raw.githubusercontent.com/PyLau/stensul-challenge/master/src/arrow.png"
-                                                     height="12" width="12" alt="Read More"/>
-                                            </a>
-                                        </td>
-                                    </tr>
-                                </table>
-                            </td>
-                        </tr>
+                         <tr>
+                             <td style="padding-left: 30px; padding-bottom: 47px;">
+                                 <!--[if mso]>
+                                     <v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://stensul.com" style="height:41px;v-text-anchor:middle;width:124px;" stroke="f" fillcolor="#f94516">
+                                         <w:anchorlock/>
+                                         <center>
+                                     <![endif]-->
+                                     <a href="https://stensul.com" style="background-color:#f94516;color:#fff;display:inline-block;font-size:15px;font-weight:300;line-height:41px;text-align:center;text-decoration:none;width:124px;-webkit-text-size-adjust:none;">
+                                         Read More
+                                         <img src="https://raw.githubusercontent.com/PyLau/stensul-challenge/master/src/arrow.png" height="12" width="12" alt="Read More"/>
+                                     </a>
+                                     <!--[if mso]>
+                                     </center>
+                                     </v:rect>
+                                     <![endif]-->
+                             </td>
+                         </tr>
                     </table>
                 </td>
             </tr>
@@ -203,7 +230,7 @@
             </tr>
             <tr>
                 <td>
-                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" id="InfoTable" style="border-collapse: collapse; margin-bottom: 42px; margin-top: 50px;" role="presentation">
+                    <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" id="InfoTable" style="border-collapse: collapse; margin-bottom: 61px; margin-top: 50px;" role="presentation">
                         <tr>
                             <td align="center" valign="top" width="50%" style="padding-left: 30px;" class="templateColumnContainer padding0">
                                 <table border="0" cellpadding="0" cellspacing="0" width="100%" style="border: 1px solid #dddddd; border-right: none;font-weight: 300; font-size: 15px;" class="add-border">
@@ -238,18 +265,16 @@
                 </td>
             </tr>
             <tr>
-                <td>
-                    <table align="center" cellspacing="0" cellpadding="0" style="margin-bottom: 36px">
-                        <tr>
-                            <td bgcolor="#f94516">
-                                <a href="https://stensul.com/" target="_blank" title="Read More" style="padding: 12px 30px; text-decoration: none;font-weight:300;display: inline-block;">
-                                    <span style="color: #ffffff; margin-right: 5px; font-size: 24px;">
-                                        More Info
-                                    </span>
-                                </a>
-                            </td>
-                        </tr>
-                    </table>
+                <td align="center" style="padding-bottom: 36px;">
+                    <!--[if mso]>
+                    <v:rect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" href="https://stensul.com" style="height:56px;v-text-anchor:middle;width:170px;" strokecolor="#e6e6e8" fillcolor="#f94516">
+                        <w:anchorlock/>
+                        <center style="color:#fff;font-family:sans-serif;font-size:13px;font-weight:bold;">More Info</center>
+                    </v:rect>
+                    <![endif]-->
+                    <a href="https://stensul.com" style="background-color:#f94516;border:1px solid #e6e6e8;color:#fff;display:inline-block;font-size:24px;font-weight:300;line-height:56px;text-align:center;text-decoration:none;width:170px;-webkit-text-size-adjust:none;mso-hide:all;">
+                        More Info
+                    </a>
                 </td>
             </tr>
             <tr>
